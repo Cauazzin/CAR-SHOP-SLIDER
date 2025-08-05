@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Gothic&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>FP Sellection</title>
+</head>
+
+<body>
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FP Sellection</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Gothic&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <img src="./img/logo.png" alt="logo fp" />
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#carros">Carros</a></li>
+                <li><a href="#contato">Fale Conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção Home -->
+    <section id="home" class="home-section">
+    <h1>Bem-vindo à FP Sellection</h1>
+    <p>
+        Sua vitrine de carros esportivos e exclusivos. Explore nosso catálogo e encontre o carro dos seus sonhos!
+    </p>
+    <a href="#carros" class="btn-primary">Conheça nossos carros</a>
+</section>
+
+    <!-- Seção Carros com seu carrossel -->
+    <section id="carros" class="container" style="height: 100vh; padding: 80px 0;">
+        <div class="list">
+
+            <div class="item active">
+                <div class="car-img">
+                    <img src="./img/1.png" alt="Porsche 911 Turbo - único dono" />
+                </div>
+                <div class="content">
+                    <p class="car-information">Único Dono</p>
+                    <h2>911 Turbo</h2>
+                    <p class="description">
+                        "Um clássico esportivo que une potência e elegância, perfeito para quem busca alta performance sem abrir mão do estilo. Este 911 Turbo impressiona com seu design icônico e tecnologia avançada, oferecendo uma experiência de direção precisa e emocionante em qualquer estrada."
+                    </p>
+                    <button class="information">Saiba Mais</button>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="car-img">
+                    <img src="./img/2.png" alt="Ferrari Conversível" />
+                </div>
+                <div class="content">
+                    <p class="car-information">Conversível</p>
+                    <h2>Ferrari</h2>
+                    <p class="description">
+                        "Conversível de tirar o fôlego, a Ferrari combina um design arrojado e aerodinâmico com um motor potente e responsivo. Cada detalhe foi pensado para entregar emoção máxima e velocidade, tornando cada passeio uma experiência única e inesquecível para quem ama velocidade e luxo."
+                    </p>
+                    <button class="information">Saiba Mais</button>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="car-img">
+                    <img src="./img/3.png" alt="Lamborghini 2015" />
+                </div>
+                <div class="content">
+                    <p class="car-information">2015</p>
+                    <h2>Lamborghini</h2>
+                    <p class="description">
+                        "A combinação perfeita entre agressividade e luxo. Este Lamborghini 2015 impressiona pelo design futurista e linhas marcantes, além de oferecer uma performance extraordinária que domina tanto as pistas quanto as ruas. Um carro para quem busca exclusividade e adrenalina em cada curva."
+                </div>
+            </div>
+        </div>
+
+        <div class="arrows">
+            <button id="prev"><img src="./img/arrow.png" alt="seta esquerda" /></button>
+            <button id="next"><img src="./img/arrow.png" alt="seta direita" /></button>
+        </div>
+
+        <div class="indicators">
+            <div class="number">01</div>
+            <ul>
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato" class="contact-section">
+    <form class="contact-form">
+        <h2>Fale Conosco</h2>
+        
+        <label for="name">Nome</label>
+        <input id="name" type="text" placeholder="Seu nome" required />
+        
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="seuemail@exemplo.com" required />
+        
+        <label for="message">Mensagem</label>
+        <textarea id="message" rows="5" placeholder="Escreva sua mensagem..." required></textarea>
+        
+        <button type="submit" class="btn-primary">Enviar</button>
+    </form>
+</section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
